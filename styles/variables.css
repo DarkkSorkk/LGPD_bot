@@ -1,0 +1,55 @@
+:root {
+  --btnColorPrimary: #1566b1;
+  --btnColorSecondary: #193651;
+  --btnColorPrimaryHover: #1772c6;
+  --btnColorSecondaryHover: #1e4162;
+  --colorInputs: #dadada;
+  --bgColor01: #f0f3f9;
+  --bgColor02: #ffffff;
+  --bgColor03: #dce3f1;
+  --bgGradient01: #c2dbf1;
+  --bgGradient02: #e2eaf1;
+  --colorText01: #0f2234;
+  --colorText02: #495e73;
+  --colorText03: #ffffff;
+  --colorAlert01: #309f72;
+  --colorAlert02: #ffdd82;
+  --colorAlert03: #dc6464;
+  --colorAlert01Text: #082f20;
+  --colorAlert02Text: #664a00;
+  --colorAlert03Text: #3c0303;
+  --font400: 400;
+  --font500: 500;
+  --font600: 600;
+  --colorShadow: rgba(0, 0, 0, 0.1);
+  --fontSize01: 3rem;
+  --fontSize02: 2rem;
+  --fontSize03: 1.75rem;
+  --fontSize04: 1.5rem;
+  --fontSize05: 1.25rem;
+  --fontSize06: 1rem;
+  --fontSize07: 0.875rem;
+  --fontSize08: 0.75rem;
+  --borderRadius01: 5px;
+  --borderRadius02: 7.5px;
+  --borderRadius03: 10px;
+}
+
+/* Modo Escuro */
+.dark-mode {
+  --btnColorPrimary: #d1aa50;
+  --btnColorPrimary: #0061ff;
+  --btnColorTertiary: #0061ff;
+  --colorInputs: rgba(255, 255, 255, 0.15);
+  --headerColor: #121c2a;
+  --navBarColor: #182433;
+  --bgColor01: #071627;
+  --bgColor02: #182433;
+  --bgColor03: #202a3b;
+  --colorText01: #ecf2fd;
+  --colorText02: #a2afc4;
+  --colorText03: #ecf2fd;
+  --colorShadow: rgba(12, 21, 31, 1);
+  --logoUnlocked01: #ffffff;
+  --logoUnlocked02: #0f2234;
+}

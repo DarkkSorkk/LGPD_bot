@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-container {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  max-width: 610px;
+  max-height: 610px;
+  background: var(--bgColor01);
+  border-radius: var(--borderRadius03);
+  box-shadow: 0px 2px 5px 0px var(--colorShadow);
+}
+
+.main-content {
+  display: grid;
+  gap: 30px;
+  padding: 30px 30px;
+  > svg {
+    margin: 0 auto;
+  }
+}
+
+.main-badge {
+  display: block;
+  background: var(--btnColorPrimary);
+  border-radius: var(--borderRadius03) var(--borderRadius03) 0 0;
+  width: 100%;
+  padding: 5px 10px;
+  font-weight: var(--font500);
+  color: var(--colorText03);
+  text-align: center;
+  box-shadow: 0px 2px 5px 0px var(--colorShadow);
+}
+
+.main-title {
+  font-size: var(--fontSize05);
+  font-weight: var(--font500);
+  line-height: 1.2;
+  text-align: center;
+  > span {
+    color: var(--btnColorPrimary);
+    font-weight: var(--font600);
+  }
+}
+
+.main-btn {
+  background: var(--btnColorPrimary);
+  color: var(--colorText03);
+  padding: 15px 30px;
+  border-radius: var(--borderRadius02);
+  font-size: var(--fontSize06);
+  transition: 0.3s ease-in-out;
+  font-weight: var(--font500);
+  &:hover {
+    background: var(--btnColorPrimaryHover);
+    box-shadow: 0px 0px 5px 0px var(--btnColorPrimary);
+  }
+}
+
+.logo-easyia {
+  z-index: 1;
+  color: var(--colorText02);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--borderRadius03);
+  }
+
+  .main-content {
+    height: 100%;
+    align-content: center;
+    gap: 20px;
+    padding: 15px;
+    > svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .main-badge {
+    font-size: var(--fontSize07);
+    border-radius: 0;
+  }
+
+  .main-title {
+    font-size: var(--fontSize06);
+  }
+
+  .main-btn {
+    padding: 15px 60px;
+    margin: 0 auto;
+    font-size: var(--fontSize07);
+  }
+  .logo-easyia {
+    color: var(--bgColor03);
+    z-index: 2;
+  }
+}
